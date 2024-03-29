@@ -1,0 +1,98 @@
+site_name: Solana Handbook
+site_url: https://ackeeblockchain.com/solana-handbook
+repo_url: https://github.com/Ackee-Blockchain/solana-handbook
+repo_name: Ackee-Blockchain/solana-handbook
+site_description: Solana Handbook
+site_author: Ackee Blockchain
+
+
+nav:
+  - About: index.md
+  - Solana Handbook:
+    - Introduction:
+        - handbook/introduction/index.md
+    - Chapter 1:
+        - handbook/chapter1/index.md
+    - Chapter 2:
+        - handbook/chapter2/index.md
+    - Chapter 3:
+        - handbook/chapter3/index.md
+    - Chapter 4:
+        - handbook/chapter4/index.md
+    - Chapter 5:
+        - handbook/chapter5/index.md
+    - Appendix A:
+        - handbook/appendixA/index.md
+    - Appendix B:
+        - handbook/appendixB/index.md
+    - Appendix C:
+        - handbook/appendixC/index.md
+  - Document Revisions: revisions/index.md
+
+# Beware this is strongly dependent on names of folders , example:
+# images have to be stored within the docs/images folder
+theme:
+  # https://squidfunk.github.io/mkdocs-material/setup/
+  name: material
+  logo: 'images/logo.png'
+  favicon: 'images/favicon.ico'
+  custom_dir: docs/overrides
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=palette+sw#color-palette-toggle
+  palette:
+    - scheme: default # light mode scheme
+      primary: black
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate  # dark mode scheme
+      primary: black
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
+    - navigation.instant
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    # - navigation.expand
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+    - navigation.indexes
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=content+copy#code-copy-button
+    - content.code.copy
+
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=social#social-links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ackee-Blockchain/solana-handbook
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Q3J5KUXuXK
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/AckeeBlockchain
+
+# https://www.mkdocs.org/user-guide/configuration/#plugins
+plugins:
+  - search
+  - macros
+  - minify:
+      minify_html: true
+
+# https://squidfunk.github.io/mkdocs-material/customization/?h=extra+css#additional-css
+extra_css:
+  - stylesheets/extra.css
+
+
+markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
