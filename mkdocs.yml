@@ -12,7 +12,7 @@ nav:
       - Transaction: handbook/chapter1/transaction.md
       - Infrastructure: handbook/chapter1/infrastructure.md
       - Security: handbook/chapter1/security.md
-      - Smart-Contract: handbook/chapter1/smart-contract.md
+      - Smart Contract: handbook/chapter1/smart-contract.md
   - Chapter 2 - Solana Introduction:
       - Solana Introduction: handbook/chapter2/solana-introduction.md
       - Comparison to Ethereum: handbook/chapter2/comparison-to-ethereum.md
