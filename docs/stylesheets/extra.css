@@ -14,3 +14,7 @@
 [data-md-color-scheme="default"] span.excalidraw {
     filter: invert(1) hue-rotate(90deg);
 }
+
+img {
+    border-radius: 10px;
+}
