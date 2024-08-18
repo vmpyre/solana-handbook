@@ -8,14 +8,9 @@ site_author: Ackee Blockchain
 nav:
   - Getting started: index.md
   - Chapter 1 - Terminology:
-      - Block: handbook/chapter1/block.md
       - Blockchain: handbook/chapter1/blockchain.md
       - Transaction: handbook/chapter1/transaction.md
-      - Protocol: handbook/chapter1/protocol.md
-      - Coin: handbook/chapter1/coin.md
-      - Nodes: handbook/chapter1/nodes.md
-      - Consensus: handbook/chapter1/consensus.md
-      - Sybil-Resistance: handbook/chapter1/sybil-resistance.md
+      - Infrastructure: handbook/chapter1/infrastructure.md
       - Security: handbook/chapter1/security.md
       - Smart-Contract: handbook/chapter1/smart-contract.md
   - Chapter 2 - Solana Introduction:
@@ -140,6 +135,7 @@ markdown_extensions:
   - tables
   # https://squidfunk.github.io/mkdocs-material/reference/math/
   # used for fractions and math
+  - admonition
 
 extra_javascript:
   - javascripts/mathjax.js
