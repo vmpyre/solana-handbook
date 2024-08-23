@@ -7,8 +7,8 @@ site_author: Ackee Blockchain
 
 nav:
   - Getting started: index.md
-  - Chapter 1 - Introduction to Solana:
-      - Introduction to Solana: handbook/chapter1/introduction.md
+  - Chapter 1 - Solana Introduction:
+      - Solana Introduction: handbook/chapter1/introduction.md
       - Blockchain: handbook/chapter1/blockchain.md
       - Transaction: handbook/chapter1/transaction.md
       - Infrastructure: handbook/chapter1/infrastructure.md
