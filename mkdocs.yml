@@ -7,7 +7,7 @@ site_author: Ackee Blockchain
 
 nav:
   - Getting started: index.md
-  - Chapter 1 - Solana Introduction:
+  - Solana Introduction:
       - Solana Introduction: handbook/chapter1/introduction.md
       - Ecosystem: handbook/chapter1/ecosystem.md
       - Blockchain: handbook/chapter1/blockchain.md
@@ -16,7 +16,7 @@ nav:
       - Security: handbook/chapter1/security.md
       - Slots, Epochs and Leaders: handbook/chapter1/slots-epochs-leaders.md
       - Smart Contract: handbook/chapter1/smart-contract.md
-  - Chapter 2 - Core Concepts:
+  - Core Concepts:
       - Core Concepts: handbook/chapter2/core-concepts.md
       - Proof of History: handbook/chapter2/proof-of-history.md
       - Tower BFT: handbook/chapter2/tower-bft.md
@@ -26,7 +26,7 @@ nav:
       - Pipelining: handbook/chapter2/pipelining.md
       - Cloudbreak: handbook/chapter2/cloudbreak.md
       - Archivers: handbook/chapter2/archivers.md
-  - Chapter 3 - Programming Model:
+  - Programming Model:
       - Communication with Network: handbook/chapter3/communication-with-network.md
       - Overview: handbook/chapter3/overview.md
       - Transaction Key Elements: handbook/chapter3/transaction-key-elements.md
@@ -34,17 +34,18 @@ nav:
       - Account Anatomy: handbook/chapter3/account-anatomy.md
       - Runtime Policy: handbook/chapter3/runtime-policy.md
       - Calling between Programs: handbook/chapter3/calling-between-programs.md
-  - Chapter 4 - Solana Program Library:
+  - Solana Program Library:
       - Solana Program Library: handbook/chapter4/solana-program-library.md
       - Token: handbook/chapter4/token-program.md
       - Associated Token: handbook/chapter4/associated-token-acc-program.md
       - Token 2022: handbook/chapter4/token-2022.md
       - Account Compression: handbook/chapter4/account-compression-program.md
-  - Appendix A - Ecosystem:
+  - Appendices:
+    - Appendix A - Ecosystem:
       - Wallets: handbook/appendixA/wallets.md
       - Popular Projects: handbook/appendixA/popular-projects.md
       - Solana Mobile Phone: handbook/appendixA/solana-mobile-phone.md
-  - Appendix B - NFTs:
+    - Appendix B - NFTs:
       - NFTs: handbook/appendixB/nfts.md
       - What is Metaplex?: handbook/appendixB/what-is-metaplex.md
       - Token Metadata Program: handbook/appendixB/token-metadata-program.md
@@ -54,9 +55,9 @@ nav:
       - Compression: handbook/appendixB/compression.md
       - Storing Metadata Off-chain: handbook/appendixB/metadata-off-chain.md
       - Executable NFT: handbook/appendixB/executable-nft.md
-  - Appendix C - Gaming:
+    - Appendix C - Gaming:
       - Gaming: handbook/appendixC/index.md
-  - About Authors: handbook/authors.md
+    - About Authors: handbook/authors.md
 
 # Beware this is strongly dependent on names of folders , example:
 # images have to be stored within the docs/images folder
@@ -89,6 +90,7 @@ theme:
     - content.code.copy
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections
     - navigation.sections
+    - navigation.tabs
     # may be used
     # - navigation.footer
 
