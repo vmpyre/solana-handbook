@@ -2,13 +2,12 @@
 
 Node is a term from graph theory or distributed systems; it is a single participant in a network. The nodes communicate with each other according to the protocol and in a [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) manner forming the whole blockchain network. Different kinds of nodes serve different purpose, for example:
 
-- validator nodes secure the network
-- RPC (Remote Procedure Call) nodes query the network and post new transactions
+- **Validator nodes** secure the network by proposing new blocks and voting on the validity of new blocks
+- **RPC (Remote Procedure Call) nodes** do not participate in voting, they query the network and post new transactions
 
-!!! note
+## Validator clients
 
-    Functions of different nodes may overlap.
-
+TODO
 
 ## Protocol
 

@@ -31,4 +31,8 @@ For a PoS-based network, the Sybil resistance mechanism is usually associated wi
 
 !!! note
 
-    Solana uses **Proof-of-Stake** mechanism coupled with a timekeeping protocol called [**Proof-of-History**](../chapter3/proof-of-history.md).
+    Solana uses **Proof-of-Stake** mechanism coupled with a timekeeping protocol called [**Proof-of-History**](../chapter2/proof-of-history.md).
+
+## Threat Scenarios on BFT network
+
+TODO

@@ -9,35 +9,37 @@ nav:
   - Getting started: index.md
   - Chapter 1 - Solana Introduction:
       - Solana Introduction: handbook/chapter1/introduction.md
+      - Ecosystem: handbook/chapter1/ecosystem.md
       - Blockchain: handbook/chapter1/blockchain.md
       - Transaction: handbook/chapter1/transaction.md
       - Infrastructure: handbook/chapter1/infrastructure.md
       - Security: handbook/chapter1/security.md
+      - Slots, Epochs and Leaders: handbook/chapter1/slots-epochs-leaders.md
       - Smart Contract: handbook/chapter1/smart-contract.md
   - Chapter 2 - Core Concepts:
-      - Core Concepts: handbook/chapter3/core-concepts.md
-      - Proof of History: handbook/chapter3/proof-of-history.md
-      - Tower BFT: handbook/chapter3/tower-bft.md
-      - Turbine: handbook/chapter3/turbine.md
-      - Gulf Stream: handbook/chapter3/gulf-stream.md
-      - Sealevel: handbook/chapter3/sealevel.md
-      - Pipelining: handbook/chapter3/pipelining.md
-      - Cloudbreak: handbook/chapter3/cloudbreak.md
-      - Archivers: handbook/chapter3/archivers.md
+      - Core Concepts: handbook/chapter2/core-concepts.md
+      - Proof of History: handbook/chapter2/proof-of-history.md
+      - Tower BFT: handbook/chapter2/tower-bft.md
+      - Turbine: handbook/chapter2/turbine.md
+      - Gulf Stream: handbook/chapter2/gulf-stream.md
+      - Sealevel: handbook/chapter2/sealevel.md
+      - Pipelining: handbook/chapter2/pipelining.md
+      - Cloudbreak: handbook/chapter2/cloudbreak.md
+      - Archivers: handbook/chapter2/archivers.md
   - Chapter 3 - Programming Model:
-      - Communication with Network: handbook/chapter4/communication-with-network.md
-      - Overview: handbook/chapter4/overview.md
-      - Transaction Key Elements: handbook/chapter4/transaction-key-elements.md
-      - Transaction Anatomy: handbook/chapter4/transaction-anatomy.md
-      - Account Anatomy: handbook/chapter4/account-anatomy.md
-      - Runtime Policy: handbook/chapter4/runtime-policy.md
-      - Calling between Programs: handbook/chapter4/calling-between-programs.md
+      - Communication with Network: handbook/chapter3/communication-with-network.md
+      - Overview: handbook/chapter3/overview.md
+      - Transaction Key Elements: handbook/chapter3/transaction-key-elements.md
+      - Transaction Anatomy: handbook/chapter3/transaction-anatomy.md
+      - Account Anatomy: handbook/chapter3/account-anatomy.md
+      - Runtime Policy: handbook/chapter3/runtime-policy.md
+      - Calling between Programs: handbook/chapter3/calling-between-programs.md
   - Chapter 4 - Solana Program Library:
-      - Solana Program Library: handbook/chapter5/solana-program-library.md
-      - Token: handbook/chapter5/token-program.md
-      - Associated Token: handbook/chapter5/associated-token-acc-program.md
-      - Token 2022: handbook/chapter5/token-2022.md
-      - Account Compression: handbook/chapter5/account-compression-program.md
+      - Solana Program Library: handbook/chapter4/solana-program-library.md
+      - Token: handbook/chapter4/token-program.md
+      - Associated Token: handbook/chapter4/associated-token-acc-program.md
+      - Token 2022: handbook/chapter4/token-2022.md
+      - Account Compression: handbook/chapter4/account-compression-program.md
   - Appendix A - Ecosystem:
       - Wallets: handbook/appendixA/wallets.md
       - Popular Projects: handbook/appendixA/popular-projects.md
