@@ -1,3 +1,0 @@
-# Appendix C - Gaming
-
-# TODO

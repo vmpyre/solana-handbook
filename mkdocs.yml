@@ -55,8 +55,6 @@ nav:
       - Compression: handbook/appendixB/compression.md
       - Storing Metadata Off-chain: handbook/appendixB/metadata-off-chain.md
       - Executable NFT: handbook/appendixB/executable-nft.md
-    - Appendix C - Gaming:
-      - Gaming: handbook/appendixC/index.md
     - About Authors: handbook/authors.md
 
 # Beware this is strongly dependent on names of folders , example:
