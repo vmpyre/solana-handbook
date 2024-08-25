@@ -33,6 +33,18 @@ For a PoS-based network, the Sybil resistance mechanism is usually associated wi
 
     Solana uses **Proof-of-Stake** mechanism coupled with a timekeeping protocol called [**Proof-of-History**](../chapter2/proof-of-history.md).
 
-## Threat Scenarios on BFT network
+## Threat Scenarios on BFT networks
 
-TODO
+In Byzantine Fault Tolerant (BFT) networks, threat scenarios involve attempts to disrupt the consensus process by taking control of validator nodes.
+
+!!! warning
+
+    ### 1/3 Attack
+
+    If an attacker controls just over **one-third** of the network’s validators, they can prevent the network from reaching consensus, which effectively halts the network.
+
+    ### 2/3 Attack
+
+    The scenario where an attacker controls more than **two-thirds** of the validators is even more dangerous. This allows them not only to halt the network but also to take over, potentially rewriting the blockchain and compromising its security.
+
+It is crucial to maintain validator diversity and decentralization in order to prevent these attacks.
