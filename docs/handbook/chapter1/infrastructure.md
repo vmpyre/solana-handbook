@@ -7,7 +7,19 @@ Node is a term from graph theory or distributed systems; it is a single particip
 
 ## Validator clients
 
-TODO
+The software that runs on validator nodes is called validator client. If all validators used the same client, a bug or exploit within that client could compromise the whole network. By using different clients, we spread out the risk. This way, if one client has an issue, the network can still stay safe and keep running smoothly.
+
+!!! important
+
+    Validator client diversity increases resilience and security of the network.
+
+As of now, there are four validator clients:
+
+- [Solana Labs](https://solanalabs.com/) client
+- [Jito Labs](https://www.jito.wtf/validators/) client
+- [Firedancer](https://www.helius.dev/blog/what-is-firedancer) (in development)
+- [Sig](https://www.syndica.io/sig) (in development)
+
 
 ## Protocol
 
