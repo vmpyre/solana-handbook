@@ -68,3 +68,31 @@ img {
     -webkit-mask-image: var(--md-admonition-icon--insight);
     mask-image: var(--md-admonition-icon--insight);
 }
+
+/* Custom Example Admonition */
+:root {
+    --md-admonition-icon--example: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l2.4 4.8 5.3.8-3.8 3.7.9 5.3-4.8-2.5-4.8 2.5.9-5.3-3.8-3.7 5.3-.8L12 2z"/></svg>');
+}
+
+.md-typeset .admonition.example,
+.md-typeset details.example {
+    border-color: #4caf50;
+    /* Border color for the example admonition */
+    /* Adjust border color as needed */
+}
+
+.md-typeset .example>.admonition-title,
+.md-typeset .example>summary {
+    background-color: rgba(76, 175, 80, 0.1);
+    /* Slightly transparent background */
+    /* Adjust background color for example admonition */
+}
+
+.md-typeset .example>.admonition-title::before,
+.md-typeset .example>summary::before {
+    background-color: #4caf50;
+    /* Icon color for the example admonition */
+    /* Adjust icon color */
+    -webkit-mask-image: var(--md-admonition-icon--example);
+    mask-image: var(--md-admonition-icon--example);
+}
