@@ -15,7 +15,7 @@ The software that runs on validator nodes is called validator client. If all val
 
 As of now, there are four validator clients:
 
-- [Solana Labs](https://solanalabs.com/) client
+- [Agave](https://www.anza.xyz/#validator) client
 - [Jito Labs](https://www.jito.wtf/validators/) client
 - [Firedancer](https://www.helius.dev/blog/what-is-firedancer) (in development)
 - [Sig](https://www.syndica.io/sig) (in development)
