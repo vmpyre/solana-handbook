@@ -18,12 +18,12 @@ To agree on a certain state of a blockchain, network nodes need to reach a conse
 There are three widely used consensus families:
 
 1. **PBFT-like (Practical BFT) algorithm family**: Nodes achieve consensus through a series of voting rounds which ensures that the network can function properly even if some nodes are malicious or fail.
-2. **Nakamoto consensus**: This family combines a Sybil resistance mechanism of Proof-of-Work with the longest-chain rule. It was invented by Satoshi Nakamoto for Bitcoin in 2008.
-3. **Avalanche Consensus**: A new family introduced in 2018. Nodes randomly sample each other, "gossip", and repeatedly vote.
+2. **Nakamoto consensus**: This family combines Proof-of-Work with the longest-chain rule. It was invented by Satoshi Nakamoto in 2008.
+3. **Avalanche Consensus**: A new family introduced in 2018. It is a method where network is quickly able to reach consensus by having nodes communicate with small groups of other nodes.
 
 ## Security
 
-Consensus and Sybil resistance mechanism are often confused as the same thing, which is not true and is worth pointing out. One works in conjunction with the other. Let’s look at how this works in both PoW-based and PoS-based networks.
+Consensus and Sybil resistance mechanisms are often confused as being the same thing, which is not true and is worth pointing out. One works in conjunction with the other. Let’s look at how this works in both PoW-based and PoS-based networks.
 
 Consider what makes Bitcoin, a PoW-based network, theoretically secure – it is the fact that only the longest chain is respected, also commonly known as the longest chain rule. This is why the consensus is called, as mentioned before, the Nakamoto consensus.
 
