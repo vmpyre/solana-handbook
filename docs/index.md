@@ -19,6 +19,8 @@ This comprehensive handbook functions as an ideal primer for those embarking on
 a journey to understand Solana. We wholeheartedly welcome any input, by identifying
 errors or suggesting expansions, to enhance this resource.
 
+TODO
+add short about authors section here at the bottom
 <!-- ## Document Revisions
 
 | Revision  | Description                                                                      | Date           |
