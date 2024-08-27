@@ -29,7 +29,7 @@ Consider what makes Bitcoin, a PoW-based network, theoretically secure – it is
 
 For a PoS-based network, the Sybil resistance mechanism is usually associated with a variant of a PBFT-like algorithm or the novel Avalanche consensus.
 
-!!! note
+!!! important
 
     Solana uses **Proof-of-Stake** mechanism coupled with a timekeeping protocol called [**Proof-of-History**](../chapter2/proof-of-history.md).
 
