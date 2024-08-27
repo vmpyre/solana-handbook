@@ -13,12 +13,12 @@ The software that runs on validator nodes is called validator client. If all val
 
     Validator client diversity increases resilience and security of the network.
 
-As of now, there are four validator clients:
+As of now, there are four validator clients (some in development):
 
-- [Agave](https://www.anza.xyz/#validator) client
-- [Jito Labs](https://www.jito.wtf/validators/) client
-- [Firedancer](https://www.helius.dev/blog/what-is-firedancer) (in development)
-- [Sig](https://www.syndica.io/sig) (in development)
+- [Agave](https://www.anza.xyz/#validator)
+- [Jito Labs](https://www.jito.wtf/validators/)
+- [Firedancer](https://www.helius.dev/blog/what-is-firedancer)
+- [Sig](https://www.syndica.io/sig)
 
 
 ## Protocol
