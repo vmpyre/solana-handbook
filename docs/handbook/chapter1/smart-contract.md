@@ -20,10 +20,3 @@ Code is compiled for a predefined ISA ([Instruction Set Architecture](https://en
 
     Only transactions involving smart contract execution need to be processed by the VM.
 
-The standard execution path is to
-
-1. prepare the relevant smart contract data and smart contract byte code,
-2. launch the VM with said data and code,
-3. observe possible failures.
-
-If the execution succeeds, the changes to the smart contract data made in the VM are taken, and the state outside the VM is changed; otherwise, the changes are discarded and the next transaction continues.
