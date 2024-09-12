@@ -1,47 +1,62 @@
-# Proof-of-History (PoH) –⁠ Virtual Clocks
+## Proof of History
 
-Agreement on time in distributed systems has always been problematic. First, a high-level overview of this concept is described, followed by an in-depth description.
+Achieving agreement on time in distributed systems has always been problematic. Solana uses a timekeeping protocol called **Proof of History (PoH)** to synchronize local virtual clocks on all nodes. PoH ensures that the timestamp in any message can be trusted and that any timeouts in the consensus protocol can be avoided because every node knows the current time and when to begin a new consensus round.
 
-Solana leverages the so-called Proof-of-History (PoH) mechanism to synchronize local virtual clocks on all nodes. PoH ensures that the timestamp in any message can be trusted and that any timeouts in the consensus protocol can be avoided because everyone knows the time and knows whether to start a new round of consensus or not. PoH allows minimizing the block time as there’s no waiting overhead. In other words, thanks to synchronized clocks, communication can be replaced by local computation.
+!!! important
 
-To prevent validators from skipping the validator that comes before them, PoH is used to force all validators to spend a minimum amount of time before they can even submit their block. Thus, if validator B follows validator A, B cannot attempt to skip A by chaining off its previous block because B has to run the Proof-of-History algorithm at least as long as A does, so A gets a fair chance to submit their block.
+    Proof of History minimizes block time by eliminating waiting overhead. Thanks to synchronized clocks, communication can be replaced by local computation.
 
+To prevent validators from skipping their predecessors, PoH is used to force all validators to complete some computational work making them wait specific amount of time before they can submit their block.
 
-## Verifiable Delay Function (VDF)
+!!! example
 
-PoH is based on a Verifiable Delay Function (VDF). Specifically, Solana uses a recursive pre-image resistant SHA256 VDF, where the output of one SHA256 iteration is recursively used as the next iteration’s input.
+    If validator B follows validator A, B cannot attempt to skip A's block by chaining off the previous block because B has to run the PoH algorithm for at least as long as A did. This gives validator A a fair chance to submit their block.
+
+!!! warning
+
+    Proof of History is **neither** a consensus mechanism **nor** a Sybil resistance mechanism!
+
+## Verifiable Delay Function
+
+PoH is based on a **Verifiable Delay Function (VDF)**. Solana uses a recursive, pre-image-resistant SHA-256 VDF, where the output of one SHA-256 iteration is recursively used as the input for the next.
+
 To create a block, the producer needs to compute the VDF with all new messages to be included in the block:
 
-```
-Message1 → Hash1
-Hash1 + Message2 → Hash2
-Hash2 + Message3 → Hash3
-…
-Hashn-1 + Messagen → Hashn
-```
+<pre><code>Message<sub>1</sub> → Hash<sub>1</sub> <br>
+Hash<sub>1</sub> + Message<sub>2</sub> → Hash<sub>2</sub> <br>
+Hash<sub>2</sub> + Message<sub>3</sub> → Hash<sub>3</sub> <br>
+... <br>
+Hash<sub>n-1</sub> + Message<sub>n</sub> → Hash<sub>n</sub></code></pre>
 
-### Observations:
+!!! note
 
-- From PoH, we have a proof of the Lower Bound on the time of Messagei (i.e., Messagei must have taken place after Hash<sub>i−1</sub>).
-- From PoH, we have a proof of the Upper Bound on the time of Messagei (i.e., Messagei must have taken place before Hash<sub>i</sub>).
-- Points 1 and 2 prove the exact order of the messages, which implies that VDF not only provides us virtual clocks, but everyone can trust the order of events.
+    Using PoH, we are able establish the exact order of messages because we can prove that **Message<sub>n</sub>** occured after **Message<sub>n-1</sub>** and before **Message<sub>n+1</sub>**.
 
-### Phases of PoH:
+## Phases of PoH
 
-- Evaluation phase (leader): computation on only one CPU core as it is a strictly sequential computation by definition. This takes:
+- **Evaluation phase (leader):**
 
-$$
-\frac{total\_number\_of\_hashes}{hashes\_per\_second\_for\_single\_core}
-$$
+    During this phase computation takes place on only one CPU core, as PoH requires **strictly sequential processing** by definition.
 
-- Verification phase (voters): the block can be checked in parallel using GPU with thousands of cores as it can be easily sliced and the intermediate hashes are known; this takes:
+    This phase takes:
 
 $$
-\frac{total\_number\_of\_hashes}{hashes\_per\_second\_for\_single\_core * number\_of\_cores\_available}
+\frac{total\ number\ of\ hashes}{hashes\ per\ second\ for\ single\ core}
 $$
 
+- **Verification phase (voters):**
 
-Thus, it can be concluded that PoH is difficult to produce but easy to verify. These are two important factors that are crucial for the use of PoH –⁠ it is not easy to falsify the PoH, but once it is finished, any validator can verify the results very quickly.
+    In verification phase, blocks can be **checked in parallel** using GPU with thousands of cores since the intermediate hashes are known.
+
+    This phase takes:
+
+$$
+\frac{total\ number\ of\ hashes}{hashes\ per\ second\ for\ single\ core \times number\ of\ cores\ available}
+$$
+
+!!! important
+
+    The key takeaway is that while PoH is **computationaly intensive to produce**, it can be **verified very quickly** by validators.
 
 
 
