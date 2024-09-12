@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Nodes
 
 Node is a term from graph theory or distributed systems; it is a single participant in a network. The nodes communicate with each other according to the protocol and in a [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) manner forming the whole blockchain network. Different kinds of nodes serve different purpose, for example:
