@@ -5,55 +5,63 @@
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/authors/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixA/popular-projects/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/authors/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixA/solana-mobile-phone/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixA/popular-projects/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixA/wallets/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixA/solana-mobile-phone/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/candy-machine/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixA/wallets/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/compression/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/candy-machine/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/executable-nft/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/compression/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/metadata-off-chain/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/executable-nft/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/nfts/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/metadata-off-chain/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/token-metadata-program/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/nfts/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/token-standard/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/token-metadata-program/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/what-is-metaplex/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/token-standard/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendixB/what-nfts/</loc>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/what-is-metaplex/</loc>
+         <lastmod>2024-09-12</lastmod>
+    </url>
+    <url>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/appendices/appendixB/what-nfts/</loc>
+         <lastmod>2024-09-12</lastmod>
+    </url>
+    <url>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter1/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
@@ -66,10 +74,6 @@
     </url>
     <url>
          <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter1/infrastructure/</loc>
-         <lastmod>2024-09-12</lastmod>
-    </url>
-    <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter1/introduction/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
@@ -86,6 +90,10 @@
     </url>
     <url>
          <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter1/transaction/</loc>
+         <lastmod>2024-09-12</lastmod>
+    </url>
+    <url>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter2/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
@@ -121,6 +129,10 @@
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter3/</loc>
+         <lastmod>2024-09-12</lastmod>
+    </url>
+    <url>
          <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter3/account-anatomy/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
@@ -149,15 +161,15 @@
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
+         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter4/</loc>
+         <lastmod>2024-09-12</lastmod>
+    </url>
+    <url>
          <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter4/account-compression-program/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
          <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter4/associated-token-acc-program/</loc>
-         <lastmod>2024-09-12</lastmod>
-    </url>
-    <url>
-         <loc>https://ackeeblockchain.com/solana-handbook/latest/handbook/chapter4/solana-program-library/</loc>
          <lastmod>2024-09-12</lastmod>
     </url>
     <url>
