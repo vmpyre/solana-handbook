@@ -1,54 +1,72 @@
 ## Key Elements
 
-**Signature** - Each digital signature is in the ed25519 binary format consuming 64 bytes.
+!!! important
 
-**Account** - A record in the Solana ledger that either holds data or is an executable program.
+    <dt><b>Signature</b></dt>
+    A 64 bytes long digital signature in the ed25519 format that verifies the authenticity and integrity of a transaction.
 
-**Compact Array** - An array-like data structure that begins with a specially encoded array length in the first 16 bits, followed by the array items.
+    <dt><b>Account</b></dt>
+    A record in the Solana ledger that serves as a storage space for user data or an executable program.
 
-**Blockhash** - A unique hash that identifies a block produced as a part of the Proof-of-History algorithm.
+    <dt><b>Compact Array</b></dt>
+    An array-like data structure that starts with a 16-bit encoded array length, followed by the array elements.
 
-**Program id** - The address (public key) of an account containing a program.
+    <dt><b>Blockhash</b></dt>
+    A unique hash that identifies a block produced as a part of the Proof of History algorithm.
 
-**Instruction** - A structure specifying a program id for execution, relevant accounts, and opaque instruction data that the program can interpret.
+    <dt><b>Program ID</b></dt>
+    The public key of an account that stores a compiled program on the blockchain.
+
+    <dt><b>Instruction</b></dt>
+    A command that specifies the Program ID to be executed, the accounts involved, and additional data that the program can use to determine the action to be performed.
 
 ## Transaction Anatomy
 
-**A Solana transaction consists of two major parts in the following order:**
+**Solana transactions consist of two major parts in the following order:**
 
 - A compact array of signatures.
-- A message that contains a compact array of account addresses followed by a recent blockhash and ending with a compact array of instructions.
+- A message that contains a compact array of account addresses, a recent blockhash and a compact array of instructions.
 
 ![Transaction Anatomy](./../../images/transaction-anatomy.png)
 
 ### Signatures
 
-**For signatures in the compact array of signatures, the Solana runtime verifies the following:**
+**For each signature in the compact array, the Solana verifies two conditions:**
 
 - The number of signatures must match the first 8 bits of the message header.
-- The signature is verified against the public key at the same index in the message’s account addresses array.
+- Each signature is validated against the corresponding public key at the same index in the account addresses array.
 
-### Message
-
-**The message layout is shown in the following table:**
+### Message Layout
 
 ![Message Layout](./../../images/message-layout.png)
 
-1. Header
-    - \# of required signatures in the transaction (8 bits).
-    - \# of read-only accounts requiring signatures (8 bits).
-    - \# of read-only accounts not-requiring signatures (8 bits).
-2. Accounts
-    - Addresses that require signatures with read-write access.
-    - Addresses that require signatures with read-only access.
-    - Addresses that do not require signatures with read-write access.
-    - Addresses that do not require signatures with read-only access.
-3. Recent blockhash
-    - Transaction lifetime: transaction is deemed invalid if the blockhash is older than 32 blocks.
-    - Transaction replay: identical txs get rejected, the blockhash can be changed and the exact same action repeated. It works in a similar way as nonce in Ethereum.
-4. Instructions with the following instruction anatomy:
-    - Program id index.
-    - Compact-array of account address indices (indices to Accounts).
-    - Compact-array of opaque 8-bit data (what operations to perform and any additional data).
+**1. Header**
+
+  - Number of required signatures in the transaction (8 bits).
+  - Number of read-only accounts requiring signatures (8 bits).
+  - Number of read-only accounts not-requiring signatures (8 bits).
+
+**2. Accounts**
+
+  - Addresses that require signatures with read-write access.
+  - Addresses that require signatures with read-only access.
+  - Addresses that do not require signatures with read-write access.
+  - Addresses that do not require signatures with read-only access.
+
+**3. Recent blockhash**
+
+  - <dt><b>Ensures transaction lifetime</b></dt>
+
+    Transaction is deemed invalid if the blockhash is older than 150 blocks (approximately 1 minute).
+
+  - <dt><b>Prevents transaction replay</b></dt>
+
+    By tying each transaction to a unique recent blockhash, Solana ensures that identical transactions cannot be processed more than once.
+
+**4. Instructions with the following anatomy:**
+
+  - Program ID index.
+  - Compact-array of account address indices.
+  - Compact-array of opaque 8-bit data (what operations to perform and any additional data).
 
 ![Instruction Anatomy](./../../images/instruction-anatomy.png)
