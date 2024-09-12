@@ -1,4 +1,7 @@
-## Introduction to Solana
+---
+hide:
+  - toc
+---
 
 Solana is a blockchain platform that allows people to build and use decentralized applications (dApps) and cryptocurrencies. It was created in 2017 by Anatoly Yakovenko and officially launched its mainnet beta in March 2020.
 
