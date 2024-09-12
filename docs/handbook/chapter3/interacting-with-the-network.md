@@ -1,6 +1,6 @@
-Any user who chooses to interact with the network must interact with any of the network’s nodes via a JSON-RPC or a WebSocket endpoint. The available methods are all listed publicly in the Solana documentation.
+Any user who chooses to interact with the network must communicate with one of the network’s nodes through a Remote Procedure Call (RPC) endpoint. The available [RPC methods](https://solana.com/docs/rpc) are listed in the Solana documentation.
 
-The methods vary from queries, such as specific account information, the network state (example below) to sending transactions.
+The methods vary from simple queries, such as retrieving specific account information, or checking the state of the network, to sending transactions that modify state of the blockchain.
 
 !!! example
 
@@ -16,6 +16,10 @@ The methods vary from queries, such as specific account information, the network
     { "jsonrpc": "2.0", "result": 0, "id": 1 }
     ```
 
-What is really important is the ability to send transactions. Sending a transaction is the only way we can change data on the Solana blockchain. Any write operation is done through the means of transactions.
+!!! important
 
-Users are not required to use the RPCs directly. There are several libraries that provide convenient interfaces for languages such as Javascript, Rust and Python.
+    The ability to send transactions is crucial because is the only way we can alter data on the blockchain. All write operations, including account creation or transfer of tokens are done through transactions.
+
+!!! info
+
+    While users can interact with the blockchain through RPCs, it is not required. There are several libraries that provide convenient interfaces for languages such as JavaScript, Rust and Python.
