@@ -1,3 +1,19 @@
+## Key Elements
+
+**Signature** - Each digital signature is in the ed25519 binary format consuming 64 bytes.
+
+**Account** - A record in the Solana ledger that either holds data or is an executable program.
+
+**Compact Array** - An array-like data structure that begins with a specially encoded array length in the first 16 bits, followed by the array items.
+
+**Blockhash** - A unique hash that identifies a block produced as a part of the Proof-of-History algorithm.
+
+**Program id** - The address (public key) of an account containing a program.
+
+**Instruction** - A structure specifying a program id for execution, relevant accounts, and opaque instruction data that the program can interpret.
+
+## Transaction Anatomy
+
 **A Solana transaction consists of two major parts in the following order:**
 
 - A compact array of signatures.
@@ -5,14 +21,14 @@
 
 ![Transaction Anatomy](./../../images/transaction-anatomy.png)
 
-## Signatures
+### Signatures
 
 **For signatures in the compact array of signatures, the Solana runtime verifies the following:**
 
 - The number of signatures must match the first 8 bits of the message header.
 - The signature is verified against the public key at the same index in the message’s account addresses array.
 
-## Message
+### Message
 
 **The message layout is shown in the following table:**
 

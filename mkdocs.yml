@@ -29,7 +29,6 @@ nav:
   - Programming Model:
       - Interacting with the Network: handbook/chapter3/interacting-with-the-network.md
       - Transaction Lifecycle: handbook/chapter3/transaction-lifecycle.md
-      - Transaction Key Elements: handbook/chapter3/transaction-key-elements.md
       - Transaction Anatomy: handbook/chapter3/transaction-anatomy.md
       - Account Anatomy: handbook/chapter3/account-anatomy.md
       - Runtime Policy: handbook/chapter3/runtime-policy.md
