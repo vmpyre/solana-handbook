@@ -1,19 +1,19 @@
-Runtime policy or Sealevel runtime account rules are a set of rules enforced by the Sealevel runtime to protect the security of the system and make Solana a safe and predictable environment for its users.
+## Runtime Policy
 
-**The following list of rules is taken from the official documentation:**
+Runtime policy is a set of rules enforced by the Sealevel runtime to ensure security of the system:
 
-1. Only the owner of the account may change owner.
-    - And only if the account is writable.
-    - And only if the account is not executable.
-    - And only if the data is zero-initialized or empty.
-2. An account not assigned to the program cannot have its balance decrease.
+1. Account ownership can only be changed by the account owner:
+    - The account must be **writable**.
+    - The account must **not be executable**.
+    - The data must be **zero-initialized or empty**.
+2. An account not owned by the program cannot have its balance reduced.
 3. The balance of read-only and executable accounts may not change.
-4. Only the owner may change account size and data.
-    - And if the account is writable.
-    - And if the account is not executable.
-5. Executable switch is a one-way (false→true) operation, and only the account owner may set it.
-6. No one can make modifications to the rent_epoch associated with this account.
+4. Only the owner can modify account size and data:
+    - The account must be **writable**.
+    - The account must **not be executable**.
+5. Making an account executable is an irreversible operation that can only be done by the account owner.
+6. No one can modify the **rent_epoch** associated with this account.
 
 ## Compute Budget
 
-Each transaction is given a compute budget to prevent abuse of the Solana nodes’ resources that could potentially lead to network failures or denial of service. When the program consumes its entire compute budget or exceeds certain bounds, the runtime halts the currently running instructions and returns an error.
+Each transaction is allocated a compute budget to prevent abuse of node resources that could potentially lead to network failures or denial of service. When the program consumes its entire compute budget or exceeds certain bounds, the runtime halts the currently running instructions and returns an error.
