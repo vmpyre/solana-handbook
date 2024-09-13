@@ -4,7 +4,7 @@ Compressed NFTs use State Compression and merkle trees to drastically reduce the
 
 Even though the on-chain data storage mechanism is different than their uncompressed counterparts, compressed NFTs still follow the exact same Metadata schema/structure. Allowing you to define your Collection and NFT in an identical way.
 
-![Blockchain](../../images/compression.png)
+![Blockchain](../../../images/compression.png)
 
 
 This chart is based on a snapshot taken on April 5, 2023 and based on a price of SOL at $21.14, MATIC at $1.14, and ETH at $1,909.45.
