@@ -32,8 +32,8 @@ nav:
       - Transaction Anatomy: handbook/chapter3/transaction-anatomy.md
       - Account Anatomy: handbook/chapter3/account-anatomy.md
       - Runtime Policy: handbook/chapter3/runtime-policy.md
-      - Cross Program Invocation: handbook/chapter3/cross-program-invocation.md
       - Program Derived Address: handbook/chapter3/program-derived-address.md
+      - Cross Program Invocation: handbook/chapter3/cross-program-invocation.md
   - Solana Program Library:
       - handbook/chapter4/index.md
       - Token: handbook/chapter4/token-program.md
