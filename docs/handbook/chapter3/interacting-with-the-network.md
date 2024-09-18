@@ -25,3 +25,33 @@ The methods vary from simple queries, such as retrieving specific account inform
 !!! info
 
     While users can interact with the blockchain through RPCs, it is not required. There are several libraries that provide convenient interfaces for languages such as JavaScript, Rust and Python.
+
+## Solana CLI
+
+Typically, you will not be interacting with the network through raw RPC requests. Instead, you will often use a wrapper around them such as the interfaces mentioned above. Solana's Command-Line Interface (CLI) is a powerful tool that provides a more user-friendly experience for interacting with the blockchain.
+
+!!! example
+
+    Solana CLI allows you to:
+
+    - **Generate a keypair**
+    ```bash
+    solana-keygen new
+    ```
+
+    - **View your public key**
+    ```bash
+    solana-keygen pubkey
+    ```
+
+    - **Check account balance**
+    ```bash
+    solana balance <account-address>
+    ```
+
+    - **Airdrop SOL** (available on Devnet and Testnet)
+    ```bash
+    solana airdrop 1 <account-address>
+    ```
+
+    For more detailed information, checkout the [documentation](https://docs.solanalabs.com/cli/).
