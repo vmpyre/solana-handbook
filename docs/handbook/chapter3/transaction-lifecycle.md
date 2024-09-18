@@ -12,4 +12,4 @@ The following steps can be thought of as an overview of what happens when an app
 
 !!! important
 
-    Everything happens in an isolated virutal machine. Instructions are executed **sequentially** and **atomically**, which means that either all instructions in the transaction complete successfully or none of the changes are applied.
+    Everything happens in an isolated virtual machine. Instructions are executed **sequentially** and **atomically**, which means that either all instructions in the transaction complete successfully or none of the changes are applied.
