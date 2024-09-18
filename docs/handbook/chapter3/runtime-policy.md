@@ -1,18 +1,22 @@
 ## Runtime Policy
 
-Runtime policy is a set of rules enforced by the Sealevel runtime to ensure security of the system:
+Runtime policy is a set of rules enforced by the runtime to ensure security of the system:
 
-1. Account ownership can only be changed by the account owner:
-    - The account must be **writable**.
-    - The account must **not be executable**.
-    - The data must be **zero-initialized or empty**.
-2. An account not owned by the program cannot have its balance reduced.
-3. The balance of read-only and executable accounts may not change.
-4. Only the owner can modify account size and data:
-    - The account must be **writable**.
-    - The account must **not be executable**.
-5. Making an account executable is an irreversible operation that can only be done by the account owner.
-6. No one can modify the **rent_epoch** associated with this account.
+1. **Account Modification**
+
+       The contents of an account can only be modified by the program that owns the account. When an account is assigned to a program, its data is initialized to zero.
+
+2. **Conservation of Balances**
+
+       The sum of balances across all accounts must not change before and after transaction execution.
+
+3. **Read-Only Account Balances**
+
+       The balances of all read-only accounts cannot be changed by any program during transaction execution.
+
+4. **Atomic Transaction Execution**
+
+       All instructions are executed atomically. If any instruction fails, the entire transaction fails.
 
 ## Compute Budget
 
