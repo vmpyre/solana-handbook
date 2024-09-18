@@ -58,10 +58,6 @@ Just as in UNIX, where "everything is a file", in Solana "everything is an accou
   - An account is considered rent-exempt if it holds at least two years’ worth of rent.
   - Every epoch runtime checks whether the account should pay rent or is rent-exempt.
 
-!!! important
-
-    An account cannot be created unless its initial balance is sufficient to be rent-exempt.
-
 ## Account Types
 
 There are 3 types of Solana accounts:
