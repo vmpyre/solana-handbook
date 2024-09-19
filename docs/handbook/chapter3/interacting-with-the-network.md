@@ -9,13 +9,13 @@ The methods vary from simple queries, such as retrieving specific account inform
     _Request of the **getBlockHeight** method:_
 
     ```bash
-    curl http://localhost:8899 -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"getBlockHeight"}'
+    curl https://api.mainnet-beta.solana.com -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"getBlockHeight","params":[]}'
     ```
 
     _Response of the **getBlockHeight** method:_
 
     ```json
-    { "jsonrpc": "2.0", "result": 0, "id": 1 }
+    {"jsonrpc":"2.0","result":269624245,"id":1}
     ```
 
 !!! important
