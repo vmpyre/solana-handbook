@@ -1,9 +1,15 @@
-# Associated Token Account Program
+## Associated Token Account
 
-This program defines the convention and provides the mechanism for mapping the user's wallet address to the associated token accounts they hold.
+An Associated Token Account (ATA) is a special account on Solana that is used to store tokens from SPL Token Program.
 
-## Motivation
+!!! important
 
-- A user may own arbitrarily many token accounts belonging to the same mint which makes it difficult for other users to know which account they should send tokens to and introduces friction into many other aspects of token management. This program introduces a way to deterministically derive a token account key from a user's main System account address and a token mint address, allowing the user to create a main token account for each token they own. We call these accounts Associated Token Accounts.
+    An ATA is derived from its **owner's wallet address** and the **address of the mint**.
 
-- In addition, it allows a user to send tokens to another user even if the beneficiary does not yet have a token account for that mint. Unlike a system transfer, for a token transfer to succeed the recipient must have a token account with the compatible mint already, and somebody needs to fund that token account. If the recipient must fund it first, it makes things like airdrop campaigns difficult and just generally increases the friction of token transfers. The Associated Token Account program allows the sender to create the associated token account for the receiver, so the token transfer just works.
+This means that user has a different ATA for every wallet and token mint combination. This is very convenient because programs can easily find and interact with the correct account without needing the user to provide the address.
+
+!!! info
+
+    A user can receive tokens even if they do not yet have a token account for that mint. The **sender is able to fund the creation of the receiver's ATA**, enabling things like airdrop campaigns.
+
+[Associated Token Account Program](https://spl.solana.com/associated-token-account) facilitates the creation and management of ATAs.
