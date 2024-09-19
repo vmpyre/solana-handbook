@@ -36,8 +36,8 @@ nav:
       - Calling between Programs: handbook/chapter3/calling-between-programs.md
   - Solana Program Library:
       - handbook/chapter4/index.md
-      - Token: handbook/chapter4/token-program.md
-      - Associated Token: handbook/chapter4/associated-token-acc-program.md
+      - Token Program: handbook/chapter4/token-program.md
+      - Associated Token Account: handbook/chapter4/associated-token-account.md
       - Token 2022: handbook/chapter4/token-2022.md
       - Account Compression: handbook/chapter4/account-compression-program.md
   - Appendices:

@@ -1,51 +1,43 @@
-# Token Program
+## Fungible and Non-Fungible Tokens
 
-A Token program on the Solana blockchain. This program defines a common implementation for Fungible and Non Fungible tokens.
+**Fungible Tokens:** These tokens are interchangeable with one another. They are indistinguishable and hold the same value.
 
-All tokens on Solana, whether they are fungible tokens or NFTs (see Figure 1.9), are created using the SPL Token Program. If you’re familiar with Ethereum, you can think of SPL tokens as a token standard such as ERC-20 or ERC-721. One key difference, however, is that Solana does not require you to deploy a new contract for each token you create. Instead, it simply requires you to send instructions to the Token Program and it will create and mint tokens on your behalf.
+**Non-Fungible Tokens (NFTs):** Each NFT is a special digital asset that holds a unique information or value. NFTs can represent ownership of a specific digital or physical item, such as digital art or real estate.
+
+## Token Program
+
+Token Program defines a common implementation for fungible and non-fungible tokens. All tokens on Solana are created using the [SPL Token Program](https://spl.solana.com/token).
+
+!!! info
+
+    Solana's **SPL tokens** are similar to Ethereum's **ERC-20** or **ERC-721** standards. However, Solana does not require you to deploy a new contract for each token you create. Instead, you simply send instructions to the Token Program, which will create and mint tokens on your behalf.
 
 ![Blockchain](../../images/token_program.png)
 
 ## Creating a new Token
 
-A new Token can be created by initializing a new Mint with the InitializeMint instruction. The Mint is used to create or "mint" new tokens, and these tokens are stored in Accounts. A Mint is associated with each Account, which means that the total supply of a particular token type is equal to the balances of all the associated Accounts (see Figure 1.9 for mentioned fields).
+A new token can be created by initializing a new mint. The mint is used to create new tokens. These tokens are stored in accounts associated with the mint, hence the name [associated token account (ATA)](./associated-token-account.md). Once a mint is initialized, the **mint_authority** can create new tokens using the **MintTo** instruction.
 
-Once a Mint is initialized, the mint_authority can create new tokens using the MintTo instruction. As long as a Mint contains a valid mint_authority, the Mint is considered to have a non-fixed supply, and the mint_authority can create new tokens with the MintTo instruction at any time.
+!!! important
 
+    As long as mint contains a valid **mint_authority**, it is considered to have a non-fixed supply, and the **mint_authority** can create new tokens with the **MintTo** instruction at any time.
 
 ## Transferring Tokens
 
-Balances can be transferred between Accounts using the Transfer instruction. The owner of the source Account must be present as a signer in the Transfer instruction when the source and destination accounts are different.
+Balances can be transferred between accounts using the **Transfer** instruction, with the source account owner required as a signer when the accounts differ.
 
-The image provided below depicts the process of token transfer. Further information about Associated Token Accounts (ATA) will be covered in subsequent sections.
+!!! warning
 
+    If the **source and destination are the same**, the transfer will **always succeed**, but this doesn't guarantee the accounts were valid SPL token accounts, that tokens moved, or that the source account owner signed.
 
 ## Burning Tokens
 
-The Burn instruction decreases an Account's token balance without transferring to another Account, effectively removing the token from circulation permanently.
-
-There is no other way to reduce supply on chain. This is similar to transferring to an account with an unknown private key or destroying a private key. But the act of burning by using Burn instructions is more explicit and can be confirmed on chain by any parties.
-
+The **Burn** instruction decreases an account's token balance without transferring to another account. The burnt tokens are permanently removed from the circulation, and this action can be verified on chain.
 
 ## Freezing Accounts
 
-The Mint may also contain a freeze_authority which can be used to issue FreezeAccount instructions that will render an Account unusable. Token instructions that include a frozen account will fail until the Account is thawed using the ThawAccount instruction. The SetAuthority instruction can be used to change a Mint's freeze_authority.
+The mint may include a **freeze_authority**, allowing it to invoke **FreezeAccount** instruction that will make account unusable. Frozen accounts can be reactivated using the **ThawAccount** instruction and **freeze_authority** can be changed using the **SetAuthority** instruction.
 
-## Wrapping Sol
+## Wrapping SOL
 
-The Token Program can be used to wrap native SOL. Doing so allows native SOL to be treated like any other Token program token type and can be useful when being called from other programs that interact with the Token Program's interface.
-
-Accounts containing wrapped SOL are associated with a specific Mint called the "Native Mint"
-
-These accounts have a few unique behaviors:
-
-- InitializeAccount sets the balance of the initialized Account to the SOL balance of the Solana account being initialized, resulting in a token balance equal to the SOL balance.
-- Transfers to and from not only modify the token balance but also transfer an equal amount of SOL from the source account to the destination account.
-- Burning is not supported
-- When closing an Account the balance may be non-zero.
-
-
-## Non-Fungible Tokens
-
-An NFT is simply a token type where only a single token has been minted.
-A more comprehensive discussion about NFTs is conducted in [Appendix B](../appendixB/index.md).
+SOL can be wrapped and used like a Token Program token when interacting with programs that use the Token Program's interface. Accounts that hold wrapped SOL are associated with **Native Mint**. Wrapped SOL ATAs have unique behaviors, which you can learn more about [here](https://spl.solana.com/token#wrapping-sol).
