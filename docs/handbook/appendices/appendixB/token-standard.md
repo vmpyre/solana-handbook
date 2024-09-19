@@ -27,4 +27,4 @@ Programmable NFTs were introduced to solve this problem. They are a new opt-in T
 
 It is then up to the creators to define custom operation-specific authorization rules (Figure 1.14) that will be enforced by the Token Metadata program. These are defined in a special RuleSet account which is attached to the Metadata account. An example of such a RuleSet could be an allowlist of program addresses that honor royalties. RuleSets are part of a new Metaplex program called Token Auth Rules.
 
-![Blockchain](../../images/programmable.png)
+![Blockchain](../../../images/programmable.png)

@@ -16,7 +16,7 @@ hide:
 
     Learn the Basics of Solana Blockchain
 
-    [Solana Basics](./handbook/chapter1/introduction.md)
+    [Solana Basics](./handbook/chapter1/index.md)
 
 -   :material-test-tube:{ .lg .middle } __Core Concepts__
 
@@ -24,7 +24,7 @@ hide:
 
     Solana can be described by the 8 Core Concepts that make it unique and fast.
 
-    [8 Core Solana Concepts](./handbook/chapter2/core-concepts.md)
+    [8 Core Solana Concepts](./handbook/chapter2/index.md)
 
 -   :octicons-mark-github-24:{ .lg .middle } __Programming Model__
 
@@ -32,7 +32,7 @@ hide:
 
     Learn the Programming Model.
 
-    [Programming Model](./handbook/chapter3/programming-model.md)
+    [Programming Model](./handbook/chapter3/index.md)
 
 -   :material-run-fast:{ .lg .middle } __Solana Program Library__
 
@@ -40,7 +40,7 @@ hide:
 
     Solana contains Solana Program Library consisting of available programs that you can utilize in your Solana Programs
 
-    [Solana Program Library](./handbook/chapter4/solana-program-library.md)
+    [Solana Program Library](./handbook/chapter4/index.md)
 
 -   :material-run-fast:{ .lg .middle } __Appendices__
 
@@ -48,6 +48,6 @@ hide:
 
     Check Appendicies for additional information from the Solana Ecosystem.
 
-    [Appendices](./handbook/appendices/appendices.md)
+    [Appendices](./handbook/appendices/index.md)
 
 </div>

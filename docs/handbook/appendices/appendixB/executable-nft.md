@@ -10,4 +10,4 @@ Because they are, at their core, NFTs, xNFTs can bring a new level of interactiv
 
 xNFTs are not some new smart contracting language, a scaling solution, or a core technology that will take years to deploy. They exist today. This is just one of the many ecosystem-wide innovations that have supercharged the Solana protocol and greater community.
 
-![Blockchain](../../images/xnfts.png)
+![Blockchain](../../../images/xnfts.png)

@@ -27,13 +27,13 @@ nav:
       - Archivers: handbook/chapter2/archivers.md
   - Programming Model:
       - handbook/chapter3/index.md
-      - Communication with Network: handbook/chapter3/communication-with-network.md
-      - Overview: handbook/chapter3/overview.md
-      - Transaction Key Elements: handbook/chapter3/transaction-key-elements.md
+      - Interacting with the Network: handbook/chapter3/interacting-with-the-network.md
+      - Transaction Lifecycle: handbook/chapter3/transaction-lifecycle.md
       - Transaction Anatomy: handbook/chapter3/transaction-anatomy.md
       - Account Anatomy: handbook/chapter3/account-anatomy.md
       - Runtime Policy: handbook/chapter3/runtime-policy.md
-      - Calling between Programs: handbook/chapter3/calling-between-programs.md
+      - Program Derived Address: handbook/chapter3/program-derived-address.md
+      - Cross Program Invocation: handbook/chapter3/cross-program-invocation.md
   - Solana Program Library:
       - handbook/chapter4/index.md
       - Token: handbook/chapter4/token-program.md
@@ -134,6 +134,7 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/reference/math/
   # used for fractions and math
   - admonition
+  - pymdownx.details
   - attr_list
   - md_in_html
   - pymdownx.emoji:

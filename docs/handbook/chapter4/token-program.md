@@ -48,4 +48,4 @@ These accounts have a few unique behaviors:
 ## Non-Fungible Tokens
 
 An NFT is simply a token type where only a single token has been minted.
-A more comprehensive discussion about NFTs is conducted in [Appendix B](../appendixB/index.md).
+A more comprehensive discussion about NFTs is conducted in [Appendix B](../appendices/appendixB/nfts.md).

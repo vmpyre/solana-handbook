@@ -17,7 +17,7 @@ Here are some of the features it offers.
 - And so much more!
 
 
-![Blockchain](../../images/candy-machine.png)
+![Blockchain](../../../images/candy-machine.png)
 
 
 
