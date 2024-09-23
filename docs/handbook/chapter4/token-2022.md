@@ -1,6 +1,6 @@
 ## Token-2022 Program
 
-The **Token-2022** Program extends the functionality provided by the Token Program. This means that the **Token-2022** program is not only backward compatible but also includes all the functions of the original Token program, as well as additional functionality often referred to as token extensions.
+The Token-2022 Program extends the functionality provided by the Token Program. This means that the Token-2022 program is not only backward compatible but also includes all the functions of the original Token program, as well as additional functionality often referred to as token extensions.
 
 !!! info
 
