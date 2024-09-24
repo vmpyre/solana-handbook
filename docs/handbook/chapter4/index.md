@@ -1,6 +1,6 @@
 # Solana Program Library
 
-The **Solana Program Library (SPL)** is a collection of on-chain programs. These programs facilitate tasks like **creation** and **management** of tokens and more.
+The Solana Program Library (SPL) is a collection of on-chain programs. These programs facilitate tasks like creation and management of tokens and more.
 
 <br />
 
@@ -20,7 +20,7 @@ The **Solana Program Library (SPL)** is a collection of on-chain programs. These
 
     Manages token accounts linked to specific wallets, making token transfers easier.
 
-    [__Associated Token__](./associated-token-acc-program.md)
+    [__Associated Token__](./associated-token-account.md)
 
 -   :material-update:{ .lg .middle } __Token 2022__
 
@@ -36,7 +36,7 @@ The **Solana Program Library (SPL)** is a collection of on-chain programs. These
 
     Enables data compression, lowering costs for NFTs and other tokenized assets.
 
-    [__Account Compression__](./account-compression-program.md)
+    [__Account Compression__](./account-compression.md)
 
 
 </div>
