@@ -28,7 +28,7 @@ Balances can be transferred between accounts using the **Transfer** instruction,
 
 !!! warning
 
-    If the **source and destination are the same**, the transfer will **always succeed**, but this doesn't guarantee the accounts were valid SPL token accounts, that tokens moved, or that the source account owner signed.
+    If the **source and destination are the same**, the transfer will **always succeed**.
 
 ## Burning Tokens
 
