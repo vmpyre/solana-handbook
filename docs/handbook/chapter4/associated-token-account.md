@@ -1,3 +1,7 @@
+## Token Account
+
+A Token Account on Solana is a general term for any account that holds tokens. Token accounts are created by the Token Program and store different types of tokens. Every account has a unique mint address. These accounts serve to hold a user's balance of a specific token, but are not automatically tied to any particular wallet.
+
 ## Associated Token Account
 
 An Associated Token Account (ATA) is a special account on Solana that is used to store tokens from SPL Token Program.
