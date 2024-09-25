@@ -10,7 +10,7 @@ The Token-2022 Program extends the functionality provided by the Token Program. 
 
 - **Flexibility**
 
-    Token issuers can choose to enable any combination of token extensions.
+    Some token extension are [incompatible](https://solana.com/developers/guides/token-extensions/getting-started#what-extensions-are-compatible-with-each-other), however, you can create a variety of custom combinations that fit your needs.
 
 - **Reduced risk**
 
