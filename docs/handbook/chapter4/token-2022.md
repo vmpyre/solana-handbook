@@ -30,12 +30,12 @@ The Token-2022 Program extends the functionality provided by the Token Program. 
 There are two types of extensions:
 
 - **Mint Extensions**
-- **Account Extensions**
+- **Token Account Extensions**
 
 !!! note
 
     - **Mint extensions** are added on top of the original Solana Token Program and extend the capabilities of tokens.
-    - **Account extensions** are added on top of Solana accounts and add account-related features.
+    - **Token account extensions** are added on top of Solana accounts and add account-related features.
 
 Some of the mint extensions:
 
@@ -44,7 +44,7 @@ Some of the mint extensions:
 - **Mint close authority**: Allows owners to close mint accounts and reclaim the lamports.
 - **Transfer hook**: Allows calling specific programs with each token transfer.
 
-Account extensions  include:
+Token account extensions  include:
 
 - **Memo required on transfer**: Requires an attached memo as a message during each token transfer.
 - **Immutable owner**: Makes it impossible to reassign ownership of an account.
