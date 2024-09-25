@@ -19,3 +19,11 @@ The root is a compact representation of all data stored in the tree. Merkle tree
 ## Account Compression Program
 
 Minting a single NFT may be relatively inexpensive, however, the cost of storing the asset's data on-chain can quickly become uneconomical as the quantity increases. The **Account Compression Program** is an on-chain system designed to address the rising concern of storage costs on Solana. The solution lies in storing a compressed hash of the asset data on-chain, while the actual data is stored off-chain in a database.
+
+## Zero-Knowledge Compression
+
+!!! important
+
+    **Zero-knowledge (ZK) proofs** allow one party to prove to another party that some statement is true without revealing any information about the statement itself.
+
+ZK proofs can be used to further reduce the amount of data that needs to be stored on a blockchain. With ZK proofs, we can verify that certain calculations or balances are correct without needing to store or reveal the underlying data.
