@@ -37,14 +37,19 @@ There are two types of extensions:
     - **Mint extensions** are added on top of the original Solana Token Program and extend the capabilities of tokens.
     - **Token account extensions** are added on top of Solana accounts and add account-related features.
 
-Some of the mint extensions:
+Mint extensions:
 
-- **Confidential transfers**: Allow confidential transfers between participating users without revealing the amount transferred.
-- **Transfer fees**: Allow transfer fees to be charged on each transfer and sent to a specified account.
-- **Mint close authority**: Allows owners to close mint accounts and reclaim the lamports.
-- **Transfer hook**: Allows calling specific programs with each token transfer.
+- **Confidential transfers**: Confidential transactions that do not reveal the amount transferred.
+- **Transfer fees**: Collection of fees on each transfer. The fees are then sent to a specified account.
+- **Mint close authority**: Enables mint owners to close their accounts and reclaim the lamports.
+- **Transfer hook**: Calls specific programs when a token transfer occurs.
+- **Interest-bearing tokens**: Set an interest rate on a token. The interest can be tracked and displayed.
+- **Non-transferable tokens**:  Restrict token transfers between users.
+- **Permanent delegate**: Permanently assign a delegate that has the authority to manage token accounts of a given mint.
+- **Metadata pointer**: Allows token creators to link an external address that contains the official metadata of the token.
+- **Metadata**:  Allows integration of metadata into tokens through custom fields.
 
-Token account extensions  include:
+Token account extensions include:
 
 - **Memo required on transfer**: Requires an attached memo as a message during each token transfer.
 - **Immutable owner**: Makes it impossible to reassign ownership of an account.
