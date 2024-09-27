@@ -6,29 +6,29 @@ The **Solana Program Library (SPL)** is a collection of on-chain programs. These
 
 <div class="grid cards" markdown>
 
--   :material-hexagon-multiple:{ .lg .middle } __Token__
+-   :material-hexagon-multiple:{ .lg .middle } __Token Program__
 
     ---
 
     Solana's core program for creating and managing tokens.
 
-    [__Token__](./token-program.md)
+    [__Token Program__](./token-program.md)
 
--   :material-link-variant:{ .lg .middle } __Associated Token__
+-   :material-link-variant:{ .lg .middle } __Token Account__
 
     ---
 
     Manages token accounts linked to specific wallets, making token transfers easier.
 
-    [__Associated Token__](./associated-token-acc-program.md)
+    [__Token Account__](./token-account.md)
 
--   :material-update:{ .lg .middle } __Token 2022__
+-   :material-update:{ .lg .middle } __Token-2022__
 
     ---
 
     An updated token standard with additional features.
 
-    [__Token 2022__](./token-2022.md)
+    [__Token-2022__](./token-2022.md)
 
 -   :material-database-export:{ .lg .middle } __Account Compression__
 
