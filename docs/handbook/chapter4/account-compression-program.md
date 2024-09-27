@@ -28,6 +28,7 @@ The root is a compact representation of all data stored in the tree. Merkle tree
 
     </div>
 
+!!! info
 
 ## Account Compression Program
 
