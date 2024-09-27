@@ -26,10 +26,6 @@ A new token can be created by initializing a new mint. The mint is used to creat
 
 Balances can be transferred between accounts using the **Transfer** instruction, with the source account owner required as a signer when the accounts differ.
 
-!!! warning
-
-    If the **source and destination are the same**, the transfer will **always succeed**.
-
 ## Burning Tokens
 
 The **Burn** instruction decreases an account's token balance without transferring to another account. The burnt tokens are permanently removed from the circulation, and this action can be verified on chain.
