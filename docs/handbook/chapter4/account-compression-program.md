@@ -13,8 +13,25 @@ The root is a compact representation of all data stored in the tree. Merkle tree
 
 ??? note "Tree Terminology"
 
-    - **Leaf node** is a node that does not have any children in the tree.
-    - **Root node** is the top-most node of a tree, which does not have a parent.
+    [**Tree**](https://en.wikipedia.org/wiki/Tree_(graph_theory)) is a term from [graph theory](https://en.wikipedia.org/wiki/Graph_theory) and it refers to a type of a graph.
+
+    <div class="grid" markdown>
+
+    - **Root node** is the top-most node of a tree, which does not have a parent. *(example node A)*
+    - **Non-leaf node** is a node that does have children in the tree. *(example nodes A and B)*
+    - **Leaf node** is a node that **does not** have any children in the tree. *(example nodes C, D and E)*
+
+    ``` title="Example Tree Graph"
+
+               A is the root of the tree   A
+                                          / \
+        B is a parent of nodes D and E   B   C
+                                        / \
+              D is a child of node B   D   E
+    ```
+
+    </div>
+
 
 ## Account Compression Program
 
