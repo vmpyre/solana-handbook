@@ -16,7 +16,7 @@ Token Program defines a common implementation for fungible and non-fungible toke
 
 ## Creating a new Token
 
-A new token can be created by initializing a new mint. The mint is used to create new tokens. These tokens are stored in accounts associated with the mint, hence the name [associated token account (ATA)](./associated-token-account.md). Once a mint is initialized, the **mint_authority** can create new tokens using the **MintTo** instruction.
+A new token can be created by initializing a new mint. The mint is used to create new tokens, which are then stored in [token accounts](./token-account.md). Once a mint is initialized, the **mint_authority** can create new tokens using the **MintTo** instruction.
 
 !!! important
 
@@ -36,4 +36,4 @@ The mint may include a **freeze_authority**, allowing it to invoke **FreezeAccou
 
 ## Wrapping SOL
 
-SOL can be wrapped and used like a Token Program token when interacting with programs that use the Token Program's interface. Accounts that hold wrapped SOL are associated with **Native Mint**. Wrapped SOL ATAs have unique behaviors, which you can learn more about [here](https://spl.solana.com/token#wrapping-sol).
+SOL can be wrapped and used like a Token Program token when interacting with programs that use the Token Program's interface. Accounts that hold wrapped SOL are associated with **Native Mint**. Wrapped SOL token accounts have unique behaviors, which you can learn more about [here](https://spl.solana.com/token#wrapping-sol).
