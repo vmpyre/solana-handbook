@@ -8,6 +8,11 @@
 
 Token Program defines a common implementation for fungible and non-fungible tokens. All tokens on Solana are created using the [SPL Token Program](https://spl.solana.com/token).
 
+!!! tip
+
+    To see the source code check [Solana Program Library Token Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program)
+
+
 !!! info
 
     Solana's **SPL tokens** are similar to Ethereum's **ERC-20** or **ERC-721** standards. However, Solana does not require you to deploy a new contract for each token you create. Instead, you simply send instructions to the Token Program, which will create and mint tokens on your behalf.
@@ -16,7 +21,7 @@ Token Program defines a common implementation for fungible and non-fungible toke
 
 ## Creating a new Token
 
-A new token can be created by initializing a new mint. The mint is used to create new tokens, which are then stored in [token accounts](./token-account.md). Once a mint is initialized, the **mint_authority** can create new tokens using the **MintTo** instruction.
+A new token can be created by initializing a new [Mint Account](./mint-account.md). The mint is used to create and store info about a new tokens. Tokens are then stored in [Token accounts](./token-account.md). Once a mint is initialized, the **mint_authority** can create (or often said mint) new tokens using the **MintTo** instruction.
 
 !!! important
 

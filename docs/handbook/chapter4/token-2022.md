@@ -1,10 +1,12 @@
-## Token-2022 Program
-
 The Token-2022 Program extends the functionality provided by the Token Program. This means that the Token-2022 program is not only backward compatible but also includes all the functions of the original Token program, as well as additional functionality often referred to as token extensions.
 
 !!! info
 
     One associated token account program still creates token accounts for both Token and Token-2022.
+
+!!! tip
+
+    To see the source code check [Solana Program Library Token-2022 Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program-2022)
 
 ## Benefits
 
