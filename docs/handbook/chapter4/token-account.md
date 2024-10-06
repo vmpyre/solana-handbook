@@ -1,4 +1,4 @@
-A Token Account on Solana is a general term for any account that holds tokens. Token accounts are created by the Token Program and store different types of tokens. Every account has a unique mint address, thus Token Account holds tokens of specific Mint.
+A token account on Solana is a general term for any account that holds tokens. Token accounts are created by the Token Program and store different types of tokens. Every account has a unique mint address, and a token account holds tokens of a specific mint account.
 
 The Token Program is the owner of a token account. However, another account can be specified as the authority with the ability to transfer tokens. This means that while the Token Program manages the structure of the token account, another account controls the movement of tokens.
 
@@ -6,7 +6,7 @@ The Token Program is the owner of a token account. However, another account can 
 
 The structure of a token account resembles that of a regular account. It holds **lamports**, has an **executable** flag (set to false), **owner** (Token Program) and stores additional **data**.
 
-These data fields provide enhanced account management features. For example, you can specify a **delegate** account, which can then spend tokens up to a **delegated_amount**. The main fields are:
+These data fields provide enhanced account management features. For example, you can specify a **delegate** account, which can then spend tokens up to a **delegated_amount**.
 
 Main fields:
 
@@ -16,15 +16,15 @@ Main fields:
 
 Additional fields:
 
-- **Delegate**: Delegate authority having possesion over delegate amount. (Optional field)
-- **IsNative**: Specifies if the Token Account holds Wrapped SOL (more info [here](https://spl.solana.com/token#wrapping-sol)). (Optional field)
+- **Delegate**: Delegate authority having possession over delegate amount. (Optional)
+- **IsNative**: Specifies whether the token account holds [wrapped SOL](https://spl.solana.com/token#wrapping-sol). (Optional)
 - **Delegate amount**: Amount authorized by the delegate authority.
-- **Close Authority**: Authority able to close the Token Account. (Optional field)
+- **Close Authority**: Authority able to close the Token Account. (Optional)
 
 
 ## Associated Token Account
 
-An Associated Token Account (ATA) is a Token Account but its address has a special property.
+An Associated Token Account (ATA) is a token account, but its address has a special property.
 
 !!! important
 
