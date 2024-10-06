@@ -14,11 +14,19 @@ The **Solana Program Library (SPL)** is a collection of on-chain programs. These
 
     [__Token Program__](./token-program.md)
 
--   :material-link-variant:{ .lg .middle } __Token Account__
+-   :material-cube-outline:{ .lg .middle } __Mint Account__
 
     ---
 
-    Manages token accounts linked to specific wallets, making token transfers easier.
+    Represents a specific type of token and stores global metadata.
+
+    [__Mint Account__](./mint-account.md)
+
+-   :material-wallet:{ .lg .middle } __Token Account__
+
+    ---
+
+    Tracks the ownership and balance of tokens.
 
     [__Token Account__](./token-account.md)
 
