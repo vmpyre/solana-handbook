@@ -47,15 +47,14 @@ nav:
     - Appendix A - Popular Projects:
       - Popular Projects: handbook/appendices/appendixA/popular-projects.md
     - Appendix B - NFTs:
-      - NFTs: handbook/appendices/appendixB/nfts.md
-      - What is Metaplex?: handbook/appendices/appendixB/what-is-metaplex.md
+      - Non-Fungible Tokens: handbook/appendices/appendixB/non-fungible-tokens.md
       - Token Metadata Program: handbook/appendices/appendixB/token-metadata-program.md
-      - What has this got to do with NFTs?: handbook/appendices/appendixB/what-nfts.md
-      - Is this all ? “No, Token Standard”: handbook/appendices/appendixB/token-standard.md
-      - Candy Machine: handbook/appendices/appendixB/candy-machine.md
-      - Compression: handbook/appendices/appendixB/compression.md
+      - Token Standard: handbook/appendices/appendixB/token-standard.md
+      - Compressed NFTs: handbook/appendices/appendixB/compressed-nfts.md
       - Storing Metadata Off-chain: handbook/appendices/appendixB/metadata-off-chain.md
-      - Executable NFT: handbook/appendices/appendixB/executable-nft.md
+      - Executable NFTs: handbook/appendices/appendixB/executable-nfts.md
+      - Metaplex: handbook/appendices/appendixB/metaplex.md
+      - Candy Machine: handbook/appendices/appendixB/candy-machine.md
 
 # Beware this is strongly dependent on names of folders , example:
 # images have to be stored within the docs/images folder
