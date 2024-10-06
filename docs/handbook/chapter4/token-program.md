@@ -19,13 +19,13 @@ Token Program defines a common implementation for fungible and non-fungible toke
 
 ![Blockchain](../../images/token_program.png)
 
-## Creating a new Token
+## Creating Tokens
 
-A new token can be created by initializing a new [Mint Account](./mint-account.md). The mint is used to create and store info about a new tokens. Tokens are then stored in [Token accounts](./token-account.md). Once a mint is initialized, the **mint_authority** can create (or often said mint) new tokens using the **MintTo** instruction.
+A token can be created by initializing a new [mint account](./mint-account.md). The mint account is used to create and hold info about new tokens, which are then stored in [token accounts](./token-account.md). Once a mint account is initialized, the **mint_authority** can create (mint) new tokens using the **MintTo** instruction.
 
 !!! important
 
-    As long as mint contains a valid **mint_authority**, it is considered to have a non-fixed supply, and the **mint_authority** can create new tokens with the **MintTo** instruction at any time.
+    As long as mint account contains a valid **mint_authority**, it is considered to have a non-fixed supply, and the **mint_authority** can create new tokens with the **MintTo** instruction at any time.
 
 ## Transferring Tokens
 
@@ -37,7 +37,7 @@ The **Burn** instruction decreases an account's token balance without transferri
 
 ## Freezing Accounts
 
-The mint may include a **freeze_authority**, allowing it to invoke **FreezeAccount** instruction that will make account unusable. Frozen accounts can be reactivated using the **ThawAccount** instruction and **freeze_authority** can be changed using the **SetAuthority** instruction.
+The mint account may include a **freeze_authority**, allowing it to invoke **FreezeAccount** instruction that will make account unusable. Frozen accounts can be reactivated using the **ThawAccount** instruction and **freeze_authority** can be changed using the **SetAuthority** instruction.
 
 ## Wrapping SOL
 
