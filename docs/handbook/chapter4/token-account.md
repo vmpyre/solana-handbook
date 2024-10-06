@@ -19,7 +19,7 @@ Additional fields:
 - **Delegate**: Delegate authority having possession over delegate amount. (Optional)
 - **IsNative**: Specifies whether the token account holds [wrapped SOL](https://spl.solana.com/token#wrapping-sol). (Optional)
 - **Delegate amount**: Amount authorized by the delegate authority.
-- **Close Authority**: Authority able to close the Token Account. (Optional)
+- **Close authority**: Authority able to close the token account. (Optional)
 
 
 ## Associated Token Account
