@@ -1,15 +1,49 @@
-# Account Compression Program
+## Merkle Tree
 
-The Account Compression Program is an innovative on-chain system designed to alleviate the rising concern of storage costs on the Solana blockchain. Its main application revolves around the utilization of SPL ConcurrentMerkleTrees, allowing for the on-chain verification of off-chain data edits. This innovative solution has been crafted in response to the challenges brought about by the increased creation of Non-Fungible Tokens (NFTs) on the Solana blockchain.
+A Merkle tree is a data structure that organizes data into a tree-like form.
 
-## Motivation
+- Each **leaf node** inside this tree represents a hash of some data.
+- Each **non-leaf node** represents a hash of its child nodes.
 
-- Solana's high throughput has fostered a significant increase in the creation of NFTs. The attractive features of NFTs, such as custodial ownership and censorship resistance, have contributed to their popularity. However, this widespread adoption has led to a critical concern: the network storage costs when creating NFTs at scale.
-- While minting a single non-fungible token may be relatively inexpensive, the cost of storing the asset's data on-chain can quickly become uneconomical as the quantity increases. This issue presents a barrier to the practical and widespread use of NFTs, especially when they are produced en masse.
-- The objective is to make the cost per token as close to zero as possible, ensuring affordability and scalability. The solution lies in storing a compressed hash of the asset data on-chain, while the actual data resides off-chain in a database.
-- The Account Compression Program facilitates this by providing a means to verify the off-chain data on-chain and enabling concurrent writes to the data. A central component of this solution is the Concurrent Merkle Tree, a newly introduced data structure that prevents proof collision during concurrent writes.
+The root is a compact representation of all data stored in the tree. Merkle trees allows us to easily verify integrity of the data without having to store all of it on-chain.
 
+??? note "Tree Terminology"
 
-## Application
+    [**Tree**](https://en.wikipedia.org/wiki/Tree_(graph_theory)) is a term from [graph theory](https://en.wikipedia.org/wiki/Graph_theory) and it refers to a type of a graph.
 
-The Account Compression Program is already in use in projects like the Metaplex Bubblegum Program. Its implementation has allowed for a reduction in on-chain storage costs, making it more economical to produce and manage NFTs at scale.
+    <div class="grid" markdown>
+
+    - **Root node** is the top-most node of a tree, which does not have a parent. *(example node A)*
+    - **Non-leaf node** is a node that does have children in the tree. *(example nodes A and B)*
+    - **Leaf node** is a node that **does not** have any children in the tree. *(example nodes C, D and E)*
+
+    ``` title="Example Tree Graph"
+
+               A is the root of the tree   A
+                                          / \
+        B is a parent of nodes D and E   B   C
+                                        / \
+              D is a child of node B   D   E
+    ```
+
+    </div>
+
+## Account Compression Program
+
+Minting a single NFT may be relatively inexpensive, however, the cost of storing the asset's data on-chain can quickly become uneconomical as the quantity increases.
+
+The **Account Compression Program** is an on-chain system designed to address the rising concern of storage costs on Solana.
+
+The solution lies in storing a compressed hash of the asset data on-chain, while the actual data is stored off-chain in a database.  The data is split into pieces, a Merkle tree is built and only the Merkle root is stored on-chain.
+
+!!! info
+
+    The account compression program uses a special type of Merkle tree called a [concurrent Merkle tree](https://spl.solana.com/account-compression/concepts). Concurrent Merkle trees allow simulataneous data changes to occur while still maintaining the integrity of the tree.
+
+## Zero-Knowledge Compression
+
+!!! important
+
+    **Zero-knowledge (ZK) proofs** allow one party to prove to another party that some statement is true without revealing any information about the statement itself.
+
+ZK proofs can be used to further reduce the amount of data that needs to be stored on a blockchain. With ZK proofs, we can verify that certain calculations or balances are correct without needing to store or reveal the underlying data.

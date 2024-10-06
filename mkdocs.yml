@@ -37,9 +37,10 @@ nav:
       - Cross Program Invocation: handbook/chapter3/cross-program-invocation.md
   - Solana Program Library:
       - handbook/chapter4/index.md
-      - Token: handbook/chapter4/token-program.md
-      - Associated Token: handbook/chapter4/associated-token-acc-program.md
-      - Token 2022: handbook/chapter4/token-2022.md
+      - Token Program: handbook/chapter4/token-program.md
+      - Mint Account: handbook/chapter4/mint-account.md
+      - Token Account: handbook/chapter4/token-account.md
+      - Token-2022: handbook/chapter4/token-2022.md
       - Account Compression: handbook/chapter4/account-compression-program.md
   - Appendices:
     - handbook/appendices/index.md
@@ -141,6 +142,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_javascript:
   - javascripts/mathjax.js

@@ -70,3 +70,4 @@ To strengthen the blockchain ecosystem, the team develops open-source frameworks
 - [School of Solana](https://ackee.xyz/school-of-solana)
 - [Solana Auditors Bootcamp](https://ackee.xyz/solana-auditors-bootcamp)
 - [School of Solidity](https://ackee.xyz/school-of-solidity)
+
