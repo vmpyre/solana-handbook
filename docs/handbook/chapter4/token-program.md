@@ -10,7 +10,7 @@ Token Program defines a common implementation for fungible and non-fungible toke
 
 !!! tip
 
-    To see the source code check [Solana Program Library Token Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program)
+    To see the source code, check out [Solana Program Library Token Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program).
 
 
 !!! info
