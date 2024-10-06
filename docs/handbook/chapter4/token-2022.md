@@ -6,7 +6,7 @@ The Token-2022 Program extends the functionality provided by the Token Program. 
 
 !!! tip
 
-    To see the source code check [Solana Program Library Token-2022 Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program-2022)
+    To see the source code, check out [Solana Program Library Token-2022 Program](https://github.com/solana-labs/solana-program-library/tree/master/token/program-2022).
 
 ## Benefits
 
