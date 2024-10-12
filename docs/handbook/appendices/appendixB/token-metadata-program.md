@@ -6,6 +6,8 @@ It achieves this using [PDAs](../../chapter3/program-derived-address.md) that ar
 
     Mint accounts are responsible for storing the global information of a token and [token accounts](../../chapter4/token-account.md) store the relationship between a wallet and a mint account.
 
+## Metadata Account
+
 Whilst mint accounts contain a few data attributes such as its current supply, they cannot hold standardized data that can be understood by apps and marketplaces. This is why the Token Metadata Program offers a metadata account that attaches itself to a mint account via a PDA.
 
 ![Blockchain](../../../images/metaplex-metadata-account.png)
