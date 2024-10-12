@@ -1,14 +1,25 @@
-# What is Metaplex?
-
-Metaplex is a decentralized protocol built on the Solana blockchain designed to simplify the creation, sale, and use of NFTs. By offering a suite of development tools, smart contracts, and open standards, Metaplex enables NFT communities to issue, manage, and own digital assets on-chain.
+**Metaplex** is a decentralized protocol built on the Solana blockchain designed to simplify the creation, sale, and use of [NFTs](./non-fungible-tokens.md). By offering a suite of development tools, smart contracts, and open standards, Metaplex enables NFT communities to issue, manage, and own digital assets on-chain.
 
 Metaplex continuously develops and maintains several programs and standards to enhance user experience and meet the evolving needs of its community.
 
-Currently, major projects are
+## Candy Machine
 
-- Token Metadata - the NFT standard for Solana
-- Candy Machine v3™ - a Profile Picture (PFP) focused tool that works like the gumball-style candy machines of old. Candy Machine V3 supports the minting of programmable NFTs.
-- Auction House - a decentralized sales protocol for NFT marketplaces
-- Creator Studio - No-code tools to create, sell, and manage NFTs on Solana.
-- Fixed-Price Sale - A program that enables creators to build/distribute membership NFTs at a fixed-price that grants holders access to exclusive content and events. It supports the restriction of sales to specific collection holders.
-- Compression - A program for creating and interacting with compressed Metaplex NFTs. Compressed NFTs are secured on-chain using Merkle trees.
+Candy Machine is one of the Metaplex protocols. It is a minting and distribution program for fair NFT collection launches on Solana. Much like its name suggests, you can think of a Candy Machine as a temporary structure which is first loaded by creators and then unloaded by buyers. It allows creators to bring their digital assets on-chain in a secure and customizable way.
+
+!!! note
+
+    The name refers to the vending machines that dispense candy for coins via a mechanical crank. In this case the candy are NFTs and the payment is SOL or a SPL token.
+
+!!! info
+
+    By September 2022, 78% of all NFTs on Solana were minted through Metaplex’s Candy Machine.
+
+Here are some of its features:
+
+- Accept payments in **SOL**, **NFTs** or any **Solana token**.
+- Restrict your launch via **start/end dates**, **mint limits**, **third party signers**, etc.
+- Protect your launch against bots via **configurable bot taxes** and **gatekeepers** like captchas.
+- Restrict **minting to specific NFT/Token holders** or to a **curated list of wallets**.
+- Create **multiple minting groups** with **different sets of rules**.
+
+![Blockchain](../../../images/candy-machine.png)
