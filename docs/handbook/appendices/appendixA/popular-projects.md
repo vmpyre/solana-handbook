@@ -14,7 +14,7 @@ Decentralized lending is when people lend and borrow money directly from each ot
 
 ## Marketplaces
 
-There are multiple NFT marketplaces where people can trade and buy NFTs, which are meant to act as certificates of ownership. NFTs may find useful applications in the future for representing real-world items, such as concert tickets.
+There are multiple NFT marketplaces where people can trade and buy NFTs, which are meant to act as certificates of ownership. NFTs have useful applications in representing real-world items, such as concert tickets.
 
 ## Analytics Tools
 
@@ -26,4 +26,4 @@ Having a 400ms block time and lightning-fast confirmations makes Solana a real-t
 
 ## Bridges
 
-Crosschain bridges let people move their assets between different blockchain networks. The bridge locks an asset on the original blockchain and then creates an equivalent token on the destination blockchain. This way the value is transferred without moving the original asset.
+Cross-chain bridges have various use cases, such as transferring data and enabling smart contracts on different networks to interact. Bridges are best known for facilitating movement of assets across different blockchain networks. The bridge locks an asset on the original blockchain and then creates an equivalent token on the destination blockchain. This way the value is transferred without moving the original asset.
