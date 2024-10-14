@@ -1,4 +1,7 @@
-## Turbine
+---
+hide:
+  - toc
+---
 
 Turbine is a block propagation protocol designed to reduce both time needed for block propagation as well as the overall message complexity, reducing the communication overhead of a node.
 
@@ -11,7 +14,7 @@ Nodes in the network are divided into small partitions called **neighborhoods**.
 
     The data unit shared is called a **shred**, and each block is composed of many shreds.
 
-## Problems with Broadcasting and Solutions
+<h2>Problems with Broadcasting</h2>
 
 Since we are in an adversarial environment, any node can decide not to rebroadcast the received shreds or broadcast incorrect data.
 

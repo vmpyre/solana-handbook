@@ -47,32 +47,32 @@ nav:
     - Ecosystem:
       - Popular Projects: handbook/appendices/appendixA/popular-projects.md
     - NFTs:
+      - Metaplex: handbook/appendices/appendixB/metaplex.md
       - Non-Fungible Tokens: handbook/appendices/appendixB/non-fungible-tokens.md
       - Token Metadata Program: handbook/appendices/appendixB/token-metadata-program.md
       - Storing Metadata Off-chain: handbook/appendices/appendixB/metadata-off-chain.md
       - Token Types: handbook/appendices/appendixB/token-types.md
-      - Metaplex: handbook/appendices/appendixB/metaplex.md
 
 # Beware this is strongly dependent on names of folders , example:
 # images have to be stored within the docs/images folder
 theme:
   # https://squidfunk.github.io/mkdocs-material/setup/
   name: material
-  logo: "images/abch-logo.png"
-  favicon: "images/favicon.ico"
+  logo: "images/solana-logo-mark-1.png"
+  favicon: "images/solana-handbook-icon.png"
   custom_dir: overrides
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=palette+sw#color-palette-toggle
   palette:
-    - scheme: default # light mode scheme
-      primary: black
-      toggle:
-        icon: material/lightbulb
-        name: Switch to dark mode
     - scheme: slate # dark mode scheme
       primary: black
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
+    - scheme: default # light mode scheme
+      primary: black
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
   features:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
     - navigation.expand

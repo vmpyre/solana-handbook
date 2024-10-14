@@ -5,15 +5,20 @@ hide:
 ---
 
 
-# Solana Handbook
+<h1 style="font-size: 60px;">Solana Handbook</h1>
 
 ## Learn the fundamentals of Solana!
 
+<div markdown style="width: 850px">
 This handbook was written for developers, auditors and anyone interested in how Solana works. Starting with the basics and terminology, it gradually introduces more advanced topics, providing a comprehensive overview without going too in-depth.
+</div>
 
-**Good luck, and enjoy the journey!**
 
-## Contents
+
+Good luck, and enjoy the journey!
+<div markdown>
+
+![Solana Logo](./images/solana-glass-dark-3.png){ align=right width=auto height=auto}
 
 <div class="grid cards" markdown>
 
@@ -23,7 +28,7 @@ This handbook was written for developers, auditors and anyone interested in how 
 
     Learn the basics of Solana blockchain.
 
-    [Solana Basics](./handbook/chapter1/index.md)
+    [__Solana Basics__](./handbook/chapter1/index.md)
 
 -   :material-cogs:{ .lg .middle } __Core Concepts__
 
@@ -31,7 +36,7 @@ This handbook was written for developers, auditors and anyone interested in how 
 
     Solana can be described by the eight core concepts that make it unique and fast.
 
-    [Core Concepts](./handbook/chapter2/index.md)
+    [__Core Concepts__](./handbook/chapter2/index.md)
 
 -   :material-code-brackets:{ .lg .middle } __Programming Model__
 
@@ -39,7 +44,7 @@ This handbook was written for developers, auditors and anyone interested in how 
 
     Explore Solana's programming model.
 
-    [Programming Model](./handbook/chapter3/index.md)
+    [__Programming Model__](./handbook/chapter3/index.md)
 
 -   :material-library:{ .lg .middle } __Solana Program Library__
 
@@ -47,27 +52,28 @@ This handbook was written for developers, auditors and anyone interested in how 
 
     Collection of programs that simplify tasks like token creation, management, and more.
 
-    [Solana Program Library](./handbook/chapter4/index.md)
+    [__Solana Program Library__](./handbook/chapter4/index.md)
 
--   :material-note-text:{ .lg .middle } __Appendices__
+<!-- -   :material-note-text:{ .lg .middle } __Appendices__
 
     ---
 
     Additional information about Solana's ecosystem.
 
-    [Appendices](./handbook/appendices/index.md)
+    [Appendices](./handbook/appendices/index.md) -->
 
+</div>
 </div>
 
 ## About Authors
 
+<div markdown style="width: 850px">
 This handbook was created with love by Solana Auditors and Developers of Ackee.
 
 Ackee is a blockchain security company founded in 2021, specializing in audits and other security assessments.
 
-To strengthen the blockchain ecosystem, the team develops open-source frameworks [Wake](https://ackee.xyz/wake/docs/latest/) and [Trident](https://ackee.xyz/trident/docs/latest/). Additionally, they share their knowledge through free certification courses:
+To strengthen the blockchain ecosystem, the team develops an open-source framework [__Trident__](https://ackee.xyz/trident/docs/latest/). Additionally, they share their knowledge through free certification courses:
 
-- [School of Solana](https://ackee.xyz/school-of-solana)
-- [Solana Auditors Bootcamp](https://ackee.xyz/solana-auditors-bootcamp)
-- [School of Solidity](https://ackee.xyz/school-of-solidity)
-
+- [__School of Solana__](https://ackee.xyz/school-of-solana)
+- [__Solana Auditors Bootcamp__](https://ackee.xyz/solana-auditors-bootcamp)
+</div >

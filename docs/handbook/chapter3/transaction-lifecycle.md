@@ -1,4 +1,7 @@
-## Transaction Lifecycle
+---
+hide:
+  - toc
+---
 
 The following steps can be thought of as an overview of what happens when an app or any user interacts with the Solana network by sending a transaction.
 
