@@ -22,4 +22,4 @@ jobs:
           destination-github-username: 'Ackee-Blockchain'
           destination-repository-name: 'firebase-abch-web'
           target-branch: add-solana-handbook
-          target-directory: 'public/solana-handbook'
+          target-directory: 'public/solana/book'
