@@ -7,18 +7,14 @@ hide:
 
 <h1 style="font-size: 60px;">Solana Handbook</h1>
 
+![Solana](./images/solana-glass-dark-3.png){ align=right}
+
 ## Learn the fundamentals of Solana!
 
-<div markdown style="width: 850px">
 This handbook was written for developers, auditors and anyone interested in how Solana works. Starting with the basics and terminology, it gradually introduces more advanced topics, providing a comprehensive overview without going too in-depth.
-</div>
-
-
 
 Good luck, and enjoy the journey!
 <div markdown>
-
-![Solana Logo](./images/solana-glass-dark-3.png){ align=right width=auto height=auto}
 
 <div class="grid cards" markdown>
 
@@ -28,7 +24,7 @@ Good luck, and enjoy the journey!
 
     Learn the basics of Solana blockchain.
 
-    [__Solana Basics__](./handbook/chapter1/index.md)
+    [__Solana Basics__](./chapter1/index.md)
 
 -   :material-cogs:{ .lg .middle } __Core Concepts__
 
@@ -36,7 +32,7 @@ Good luck, and enjoy the journey!
 
     Solana can be described by the eight core concepts that make it unique and fast.
 
-    [__Core Concepts__](./handbook/chapter2/index.md)
+    [__Core Concepts__](./chapter2/index.md)
 
 -   :material-code-brackets:{ .lg .middle } __Programming Model__
 
@@ -44,7 +40,7 @@ Good luck, and enjoy the journey!
 
     Explore Solana's programming model.
 
-    [__Programming Model__](./handbook/chapter3/index.md)
+    [__Programming Model__](./chapter3/index.md)
 
 -   :material-library:{ .lg .middle } __Solana Program Library__
 
@@ -52,15 +48,7 @@ Good luck, and enjoy the journey!
 
     Collection of programs that simplify tasks like token creation, management, and more.
 
-    [__Solana Program Library__](./handbook/chapter4/index.md)
-
-<!-- -   :material-note-text:{ .lg .middle } __Appendices__
-
-    ---
-
-    Additional information about Solana's ecosystem.
-
-    [Appendices](./handbook/appendices/index.md) -->
+    [__Solana Program Library__](./chapter4/index.md)
 
 </div>
 </div>
