@@ -27,9 +27,9 @@ jobs:
           git config --global user.name "Handbook bot"
           mkdocs gh-deploy --remote-branch test-pipeline --ignore-version
       - name: Checkout documentation branch
-        run: git checkout -f documentation
+        run: git checkout -f test-pipeline
       - name: Push documentation
         uses: ad-m/github-push-action@master
         with:
           ssh: true
-          branch: documentation
+          branch: test-pipeline
