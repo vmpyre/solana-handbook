@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.email "solanahandbook@ackee.com"
           git config --global user.name "Handbook bot"
-          mkdocs gh-deploy --remote-branch test-pipeline --ignore-version --force
+          mkdocs gh-deploy --remote-branch test-pipeline --ignore-version --dirty
       - name: Checkout documentation branch
         run: git checkout -f test-pipeline
       - name: Push documentation
