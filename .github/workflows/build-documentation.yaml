@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: "3.10"
       - uses: ./.github/actions/setup-documentation/
-      - name: Fetch documentation branch
-        run: git fetch origin documentation:documentation --depth=1
+      - name: Fetch test-pipeline branch
+        run: git fetch origin test-pipeline:test-pipeline --depth=1
       - name: Build documentation
         working-directory: .
         run: |
