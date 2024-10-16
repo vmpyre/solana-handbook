@@ -18,16 +18,16 @@ jobs:
         with:
           python-version: "3.10"
       - uses: ./.github/actions/setup-documentation/
-      - name: Fetch test-pipeline branch
-        run: git fetch origin test-pipeline:test-pipeline --depth=1
+      - name: Fetch documentation branch
+        run: git fetch origin documentation:documentation --depth=1
       - name: Build documentation
         working-directory: .
         run: |
           git config --global user.email "solanahandbook@ackee.com"
           git config --global user.name "Handbook bot"
-          mkdocs gh-deploy --remote-branch test-pipeline --ignore-version
+          mkdocs gh-deploy --remote-branch documentation --ignore-version
       - name: Checkout documentation branch
-        run: git checkout -f test-pipeline
+        run: git checkout -f documentation
       - name: Pull workflow branch
         run: |
           git fetch origin workflow
@@ -38,4 +38,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           ssh: true
-          branch: test-pipeline
+          branch: documentation
